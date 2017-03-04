@@ -1,12 +1,13 @@
-# Node.js Style Guide
+# Pragmatic Node.js Style Guide
 
-This is a guide for writing consistent and aesthetically pleasing node.js code.
+[![CC BY-SA 3.0](https://img.shields.io/badge/license-CC%20BY--SA%203.0-green.svg)](https://creativecommons.org/licenses/by-sa/3.0/)
+
+Pragmatic is a style guide for writing consistent and aesthetically pleasing node.js code.
 It is inspired by what is popular within the community, and flavored with some
 personal opinions.
 
-There is a .jshintrc which enforces these rules as closely as possible. You can
-either use that and adjust it, or use
-[this script](https://gist.github.com/kentcdodds/11293570) to make your own.
+There is a .jshintrc which enforces these rules as closely as possible, as well as a .eslint.
+Pick your poison.
 
 ## Table of contents
 
@@ -51,7 +52,7 @@ either use that and adjust it, or use
 
 ## Formatting
 
-You may want to use [editorconfig.org](http://editorconfig.org/) to enforce the formatting settings in your editor. Use the [Node.js Style Guide .editorconfig file](.editorconfig) to have indentation, newslines and whitespace behavior automatically set to the rules set up below.
+You may want to use [editorconfig.org](https://editorconfig.org/) to enforce the formatting settings in your editor. Use the [Node.js Style Guide .editorconfig file](.editorconfig) to have indentation, newslines and whitespace behavior automatically set to the rules set up below.
 
 ### 2 Spaces for indentation
 
@@ -76,8 +77,8 @@ a core value of our community. Consider the points of [the opposition][], but
 be a traditionalist when it comes to abusing error correction mechanisms for
 cheap syntactic pleasures.
 
-[the opposition]: http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding
-[hnsemicolons]: http://news.ycombinator.com/item?id=1547647
+[the opposition]: https://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding
+[hnsemicolons]: https://news.ycombinator.com/item?id=1547647
 
 ### 80 characters per line
 
@@ -158,7 +159,7 @@ while (keys.length) {
 }
 ```
 
-[crockfordconvention]: http://javascript.crockford.com/code.html
+[crockfordconvention]: https://javascript.crockford.com/code.html
 
 ## Naming Conventions
 
@@ -532,7 +533,7 @@ software than they can solve.
 Feel free to use getters that are free from [side effects][sideeffect], like
 providing a length property for a collection class.
 
-[sideeffect]: http://en.wikipedia.org/wiki/Side_effect_(computer_science)
+[sideeffect]: https://en.wikipedia.org/wiki/Side_effect_(computer_science)
 
 ### Do not extend built-in prototypes
 
@@ -563,8 +564,6 @@ if (a.empty()) {
 
 ## Attribution
 
-This guide was originally created by [Felix Geisendörfer](http://felixge.de/) and is
-licensed under the [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
-license.
+Pragmatic Node.js Style Guide was originally created as the [Node Style Guide](https://github.com/felixge/node-style-guide) by [Felix Geisendörfer](https://felixge.de/). It was improved upon by [Jade Thornton](https://jmthornton.net).
 
-![Creative Commons License](http://i.creativecommons.org/l/by-sa/3.0/88x31.png)
+[![CC BY-SA 3.0](https://i.creativecommons.org/l/by-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-sa/3.0/)
