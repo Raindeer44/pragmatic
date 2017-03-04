@@ -1,20 +1,21 @@
 {
-  "name": "node-style-guide",
-  "description": "A guide for styling your node.js / JavaScript code.",
-  "version": "1.0.0",
-  "author": "Felix Geisendörfer <felix@debuggable.com> (http://debuggable.com/)",
+  "name": "pragmatic-js-style",
+  "description": "A pragmatic guide for styling your Node.js / JavaScript code",
+  "version": "1.0.1",
+  "author": "Jade Thornton <jade@jmthornton.net>",
   "bugs": {
-    "url": "https://github.com/felixge/node-style-guide/issues"
+    "url": "https://github.com/raindeer44/pragmatic-js-style/issues"
   },
-  "homepage": "https://github.com/felixge/node-style-guide#readme",
+  "homepage": "https://github.com/raindeer44/pragmatic-js-style#readme",
   "keywords": [
     "eslint",
-    "jshint"
+    "jshint",
+    "nodejs",
+    "style"
   ],
   "license": "CC-BY-SA-3.0",
   "main": "index.js",
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/felixge/node-style-guide.git"
+    "url": "https://github.com/raindeer44/pragmatic-js-style"
   }
 }
