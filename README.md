@@ -596,6 +596,6 @@ if (a.empty()) {
 
 ## Attribution
 
-Pragmatic Node.js Style Guide was originally created as the [Node Style Guide](https://github.com/felixge/node-style-guide) by [Felix Geisendörfer](https://felixge.de/). It was improved upon by [Jade Thornton](https://jmthornton.net).
+Pragmatic Node.js Style Guide is based on [Node Style Guide](https://github.com/felixge/node-style-guide) by [Felix Geisendörfer](https://felixge.de/). It was forked and improved upon by [Jade Thornton](https://jmthornton.net).
 
 [![CC BY-SA 3.0](https://i.creativecommons.org/l/by-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-sa/3.0/)
