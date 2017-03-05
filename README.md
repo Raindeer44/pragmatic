@@ -19,6 +19,7 @@ Pick your poison.
 * [80 characters per line](#80-characters-per-line)
 * [Use single quotes](#use-single-quotes)
 * [Opening braces go on the same line](#opening-braces-go-on-the-same-line)
+* [Whitespace around conditionals and not before arguments](#whitespace-around-conditionals-and-not-before-arguments)
 * [Declare one variable per var statement](#declare-one-variable-per-var-statement)
 
 ### Naming Conventions
@@ -83,12 +84,12 @@ cheap syntactic pleasures.
 ### 80 characters per line
 
 Limit your lines to 80 characters. Yes, screens have gotten much bigger over the
-last few years, but your brain has not. Use the additional room for split screen,
-your editor supports that, right?
+last few years, but your brain has not. Use the additional room for tiling, your 
+editor supports that, right?
 
 ### Use single quotes
 
-Use single quotes, unless you are writing JSON.
+Use single quotes, except in JSON.
 
 *Right:*
 
@@ -104,7 +105,7 @@ var foo = "bar";
 
 ### Opening braces go on the same line
 
-Your opening braces go on the same line as the statement.
+Opening braces go on the same line as the statement.
 
 *Right:*
 
@@ -122,15 +123,37 @@ if (true)
   console.log('losing');
 }
 ```
+### Whitespace around conditionals and not before arguments
 
-Also, notice the use of whitespace before and after the condition statement.
+There should be whitespace before and after contition statements. However,
+there is no whitespace between a function name and its arguments.
+
+*Right:*
+
+```js
+function infiniteFun() {
+  while (true) {
+    console.log('I am human readable');
+  }
+}
+```
+
+*Wrong:*
+
+```js
+function infiniteFun () {
+  while(true) {
+    console.log('I cause confusion and saddness');
+  }
+}
+```
 
 ### Declare one variable per var statement
 
 Declare one variable per var statement, it makes it easier to re-order the
 lines. However, ignore [Crockford][crockfordconvention] when it comes to
 declaring variables deeper inside a function, just put the declarations wherever
-they make sense.
+they make sense, keeping in mind the temporal dead zone.
 
 *Right:*
 
@@ -180,6 +203,11 @@ var adminUser = db.query('SELECT * FROM users ...');
 ```js
 var admin_user = db.query('SELECT * FROM users ...');
 ```
+*Wrong:*
+
+```js
+var au = db.query('SELECT * FROM users ...');
+```
 
 ### Use UpperCamelCase for class names
 
@@ -223,8 +251,6 @@ function File() {
 }
 File.fullPermissions = 0777;
 ```
-
-[const]: https://developer.mozilla.org/en/JavaScript/Reference/Statements/const
 
 ## Variables
 
@@ -328,11 +354,12 @@ if (password.length >= 4 && /^(?=.*\d).{4,}$/.test(password)) {
 
 Keep your functions short. A good function fits on a slide that the people in
 the last row of a big room can comfortably read. So don't count on them having
-perfect vision and limit yourself to ~15 lines of code per function.
+perfect vision and limit yourself to ~15 lines of code per function. When in 
+doubt, make it shorter.
 
 ### Return early from functions
 
-To avoid deep nesting of if-statements, always return a function's value as early
+Avoid deep nesting of if-statements, always return a function's value as early 
 as possible.
 
 *Right:*
@@ -475,7 +502,8 @@ User.findOne({ name: 'foo' }).populate('bar')
 
 Use slashes for both single line and multi line comments. Try to write
 comments that explain higher level mechanisms or clarify difficult
-segments of your code. Don't use comments to restate trivial things.
+segments of your code. Don't use comments to restate trivial or
+obvious things.
 
 *Right:*
 
@@ -502,6 +530,7 @@ if (isSessionValid) {
 // Execute a regex
 var matches = item.match(/ID_([^\n]+)=([^\n]+)/);
 
+// loadUser
 // Usage: loadUser(5, function() { ... })
 function loadUser(id, cb) {
   // ...
@@ -519,16 +548,19 @@ if (isSessionValid) {
 
 ### Object.freeze, Object.preventExtensions, Object.seal, with, eval
 
-Crazy shit that you will probably never need. Stay away from it.
+Crazy shit you will probably never need. Stay away from it.
 
 ### Requires At Top
 
-Always put requires at top of file to clearly illustrate a file's dependencies. Besides giving an overview for others at a quick glance of dependencies and possible memory impact, it allows one to determine if they need a package.json file should they choose to use the file elsewhere.
+Always put requires at top of file to clearly illustrate a file's dependencies. 
+Besides giving an overview for others at a quick glance of dependencies and 
+possible memory impact, it allows one to determine if they need a package.json 
+file should they choose to use the file elsewhere.
 
 ### Getters and setters
 
 Do not use setters, they cause more problems for people who try to use your
-software than they can solve.
+software than they can solve. Encapsulation is your friend.
 
 Feel free to use getters that are free from [side effects][sideeffect], like
 providing a length property for a collection class.
