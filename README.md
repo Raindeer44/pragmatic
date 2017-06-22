@@ -1,13 +1,15 @@
-# Pragmatic Node.js Style Guide
+# Pragmatic Style Guide
 
 [![CC BY-SA 3.0](https://img.shields.io/badge/license-CC%20BY--SA%203.0-green.svg)](https://creativecommons.org/licenses/by-sa/3.0/)
 
-Pragmatic is a style guide for writing consistent and aesthetically pleasing node.js code.
-It is inspired by what is popular within the community, and flavored with some
-personal opinions.
+Pragmatic Style is a guide for writing consistent, readable and aesthetically 
+pleasing javascript code. It is inspired by what is popular within the 
+community, and flavored with some personal opinions. It is designed to be what 
+it is named for: pragmatic. This means writing code which is human readable, 
+which is inherently easier to debug than what some may call more "succinct" 
+coding.
 
-There is a .jshintrc which enforces these rules as closely as possible, as well as a .eslint.
-Pick your poison.
+Pragmatic Style emphasizes human-readability, debug-ability and consistency.
 
 ## Table of contents
 
@@ -53,7 +55,11 @@ Pick your poison.
 
 ## Formatting
 
-You may want to use [editorconfig.org](https://editorconfig.org/) to enforce the formatting settings in your editor. Use the [Pragmatic Style Guide .editorconfig file](.editorconfig) to have indentation, newslines and whitespace behavior automatically set to the rules set up below.
+You may want to use [editorconfig.org](https://editorconfig.org/) to enforce the formatting settings 
+in your editor. Use the [Pragmatic Style Guide .editorconfig file](.editorconfig) to have indentation, 
+newlines and whitespace behavior automatically set to the rules set up below.
+
+Also included are .jshintrc and .eslintrc pre-made for your linting convenience.
 
 ### 2 Spaces for indentation
 
@@ -253,6 +259,34 @@ File.fullPermissions = 0777;
 ```
 
 ## Variables
+
+### Const and let
+
+Use `const` whenever possible, use `let` in cases when the variable will be reassigned. Avoid using `var` unless working with legacy code (pre-ES6). Using these instead of `var` signals intent about how the variable will be used. This allows better reasoning about code and therefore easier-to-find bugs. Compilers can also generate better optimizations when they know what you're thinking.
+
+The associated behavior known as the [Temporal Dead Zone][temporal dead zone gist] enforces readability since humans read top-to-bottom. Keep this behavior in mind and you'll be fine.
+
+*Right:*
+
+```js
+const fs = require('fs');
+
+let a = {
+  phone: 'home',
+};
+```
+
+*Wrong:*
+
+```js
+var fs = require('fs');
+
+var a = {
+  name: 'bad guy'
+}
+```
+
+[temporal dead zone gist]: https://gist.github.com/Raindeer44/52f3607058f74cea069911fcb5bd5c6a#file-tdz-bad-js
 
 ### Object / Array creation
 
