@@ -8,6 +8,39 @@ Pragmatic Style emphasizes human-readability, debug-ability and consistency.
 
 ## Table of contents
 
+<!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Table of contents](#table-of-contents)
+- [Formatting](#formatting)
+	- [Two spaces for indentation](#two-spaces-for-indentation)
+	- [Newlines](#newlines)
+	- [No trailing whitespace](#no-trailing-whitespace)
+	- [Use Semicolons](#use-semicolons)
+	- [80 characters per line](#80-characters-per-line)
+	- [Use single quotes](#use-single-quotes)
+	- [Opening braces go on the same line](#opening-braces-go-on-the-same-line)
+	- [Whitespace around conditionals and not before arguments](#whitespace-around-conditionals-and-not-before-arguments)
+	- [Initialize one variable at a time](#initialize-one-variable-at-a-time)
+- [Naming Conventions](#naming-conventions)
+	- [Use lowerCamelCase for variables, properties and function names](#use-lowercamelcase-for-variables-properties-and-function-names)
+	- [Use UpperCamelCase for class names](#use-uppercamelcase-for-class-names)
+- [Variables](#variables)
+	- [Const and let](#const-and-let)
+	- [Object / Array creation](#object-array-creation)
+- [Conditionals](#conditionals)
+	- [Use the === operator](#use-the-operator)
+	- [Use descriptive conditions](#use-descriptive-conditions)
+- [Functions](#functions)
+	- [Write small functions](#write-small-functions)
+	- [Return early from functions](#return-early-from-functions)
+	- [No nested closures](#no-nested-closures)
+	- [Method chaining](#method-chaining)
+- [Miscellaneous](#miscellaneous)
+	- [Object.freeze, Object.preventExtensions, Object.seal, with, eval](#objectfreeze-objectpreventextensions-objectseal-with-eval)
+	- [Requires At Top](#requires-at-top)
+	- [Getters and setters](#getters-and-setters)
+
+<!-- /TOC -->
 
 ## Formatting
 
