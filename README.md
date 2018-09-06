@@ -1,3 +1,7 @@
+# Deprecation Notice
+
+I don't want to maintain this anymore, since I use [semistandard](https://github.com/Flet/semistandard) anyway.
+
 # Pragmatic Style Guide
 
 [![CC BY-SA 3.0](https://img.shields.io/badge/license-CC%20BY--SA%203.0-green.svg)](https://creativecommons.org/licenses/by-sa/3.0/)
