@@ -1,10 +1,4 @@
-# Deprecation Notice
-
-I don't want to maintain this anymore, since I use [semistandard](https://github.com/Flet/semistandard) anyway.
-
-# Pragmatic Style Guide
-
-[![CC BY-SA 3.0](https://img.shields.io/badge/license-CC%20BY--SA%203.0-green.svg)](https://creativecommons.org/licenses/by-sa/3.0/)
+# Pragmatic Style
 
 Pragmatic Style is a guide for writing consistent, readable and aesthetically pleasing javascript code. It is inspired by what is popular within the community, and flavored with some personal opinions. It is designed to be what it is named for: pragmatic. This means writing human readable which is inherently easier to debug than what some may call more "succinct" coding.
 
@@ -471,7 +465,3 @@ Do not use setters, they cause more problems for people who try to use your soft
 Feel free to use getters that are free from [side effects][7], like providing a length property for a collection class.
 
 [7]: https://en.wikipedia.org/wiki/Side_effect_(computer_science)
-
----
-
-[![CC BY-SA 3.0](https://i.creativecommons.org/l/by-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-sa/3.0/)
