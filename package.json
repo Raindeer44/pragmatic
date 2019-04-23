@@ -1,21 +1,21 @@
 {
-  "name": "pragmatic-js-style",
+  "name": "pragmatic-style",
   "description": "A pragmatic guide for styling your Node.js / JavaScript code",
   "version": "1.0.1",
-  "author": "Jade Thornton <jade@jmthornton.net>",
+  "author": "Jade Michael Thornton",
   "bugs": {
-    "url": "https://github.com/raindeer44/pragmatic-js-style/issues"
+    "url": "https://gitlab.com/thornjad/pragmatic/issues"
   },
-  "homepage": "https://github.com/raindeer44/pragmatic-js-style#readme",
+  "homepage": "https://gitlab.com/thornjad/pragmatic#readme",
   "keywords": [
     "eslint",
     "jshint",
     "nodejs",
     "style"
   ],
-  "license": "CC-BY-SA-3.0",
+  "license": "ISC",
   "main": "index.js",
   "repository": {
-    "url": "https://github.com/raindeer44/pragmatic-js-style"
+    "url": "https://gitlab.com/thornjad/pragmatic"
   }
 }
