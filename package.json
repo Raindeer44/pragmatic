@@ -1,7 +1,7 @@
 {
   "name": "pragmatic-style",
   "description": "A pragmatic guide for styling your Node.js / JavaScript code",
-  "version": "1.9.0",
+  "version": "1.9.1",
   "author": "Jade Michael Thornton",
   "bugs": {
     "url": "https://gitlab.com/thornjad/pragmatic/issues"
