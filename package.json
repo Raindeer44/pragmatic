@@ -1,7 +1,7 @@
 {
   "name": "pragmatic-style",
   "description": "A pragmatic guide for styling your Node.js / JavaScript code",
-  "version": "1.0.1",
+  "version": "1.9.0",
   "author": "Jade Michael Thornton",
   "bugs": {
     "url": "https://gitlab.com/thornjad/pragmatic/issues"
@@ -17,5 +17,16 @@
   "main": "index.js",
   "repository": {
     "url": "https://gitlab.com/thornjad/pragmatic"
+  },
+  "peerDependencies": {
+    "eslint": ">=5.x"
+  },
+  "dependencies": {
+    "eslint-plugin-promise": "^4.1.1",
+    "regexp-tree": "^0.1.5"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "mocha": "^6.1.4"
   }
 }
