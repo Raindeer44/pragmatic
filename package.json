@@ -3,12 +3,12 @@
   "description": "A pragmatic guide for styling your Javascript code",
   "version": "1.9.1",
   "author": "Jade Michael Thornton",
-	"scripts": {
-		"test": "mocha test --recursive"
-	},
-	"engines": {
-		"node": ">=7"
-	},
+  "scripts": {
+    "test": "mocha test --recursive"
+  },
+  "engines": {
+    "node": ">=7"
+  },
   "bugs": {
     "url": "https://gitlab.com/thornjad/pragmatic/issues"
   },
@@ -29,7 +29,8 @@
   },
   "dependencies": {
     "eslint-plugin-promise": "^4.1.1",
-    "regexp-tree": "^0.1.5"
+    "regexp-tree": "^0.1.5",
+    "safe-regex": "^2.0.2"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
