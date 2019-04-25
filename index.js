@@ -12,6 +12,7 @@ module.exports = {
   extends: 'eslint:recommended',
   plugins: [
     'promise',
+    'no-iife'
   ],
   rules: {
     // first reduce some recommended levels
