@@ -22,6 +22,7 @@ module.exports = {
 
     // now load our rules
     ...require('./rules/detect-problems'),
+    ...require('./rules/optimization'),
     ...require('./rules/modern-js'),
     ...require('./rules/promises'),
     ...require('./rules/clean-code')
