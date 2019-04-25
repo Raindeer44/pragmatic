@@ -54,6 +54,7 @@ module.exports = {
   }],
   'padded-blocks': ['error', 'never'],
   'prefer-const': 'error',
+  'prefer-includes': require('./lib/prefer-includes'),
   'prefer-named-capture-group': 'warn',
   'quotes': ['error', 'single', {allowTemplateLiterals: true}],
   'semi': ['error', 'always'],
