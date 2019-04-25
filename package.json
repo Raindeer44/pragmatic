@@ -1,8 +1,14 @@
 {
   "name": "pragmatic-style",
-  "description": "A pragmatic guide for styling your Node.js / JavaScript code",
+  "description": "A pragmatic guide for styling your Javascript code",
   "version": "1.9.1",
   "author": "Jade Michael Thornton",
+	"scripts": {
+		"test": "mocha test --recursive"
+	},
+	"engines": {
+		"node": ">=7"
+	},
   "bugs": {
     "url": "https://gitlab.com/thornjad/pragmatic/issues"
   },

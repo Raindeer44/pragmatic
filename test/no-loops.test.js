@@ -1,9 +1,11 @@
 'use strict';
 
-const rule = require('../rules/no-loops.js');
+const rule = require('../rules/no-loop');
 const RuleTester = require('eslint').RuleTester;
 
-const ruleTester = new RuleTester();
+const ruleTester = new RuleTester({
+  parserOptions: {ecmaVersion: 2018}
+});
 ruleTester.run('no-loops', rule, {
   valid: [
     {
@@ -30,7 +32,6 @@ ruleTester.run('no-loops', rule, {
     },
     {
       code: 'for (i of [1, 2, 3]) { console.log(i) }',
-      parser: 'babel-eslint',
       errors: [ { message: 'loops are not allowed' } ]
     }
   ]

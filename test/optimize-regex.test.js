@@ -1,9 +1,11 @@
 'use strict';
 
-const rule = require('../../../lib/rules/optimize-regex'),
-  RuleTester = require('eslint').RuleTester;
+const rule = require('../rules/optimize-regex'),
+      RuleTester = require('eslint').RuleTester;
 
-const ruleTester = new RuleTester();
+const ruleTester = new RuleTester({
+  parserOptions: {ecmaVersion: 2018}
+});
 ruleTester.run('optimize-regex', rule, {
   valid: [
     'let foo = /baz/i',
@@ -14,7 +16,7 @@ ruleTester.run('optimize-regex', rule, {
 
   invalid: [
     {
-      code: 'var re = /[a-zA-Z_0-9][A-Z_\\da-z]*\\e{1,}/',
+      code: 'let re = /[a-zA-Z_0-9][A-Z_\\da-z]*\\e{1,}/',
       output: 'let re = /\\w+e+/',
       errors: [
         {
