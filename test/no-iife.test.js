@@ -15,19 +15,19 @@ ruleTester.run('no-iife', rule, {
     'foo()',
     'bar(a, b, c)',
     'function baz() {}; baz();',
-    'var x = function() {}; var y = x();'
+    'const x = function() {}; const y = x();'
   ],
   invalid: [
     {
-      code: 'var x = function() {}();',
+      code: 'const x = function() {}();',
       errors,
     },
     {
-      code: 'var x = (function () {})();',
+      code: 'const x = (function () {})();',
       errors,
     },
     {
-      code: 'var x = (function () {}())',
+      code: 'const x = (function () {}())',
       errors,
     },
     {
