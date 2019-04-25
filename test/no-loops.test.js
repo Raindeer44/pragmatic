@@ -1,6 +1,4 @@
-'use strict';
-
-const rule = require('../rules/no-loop');
+const rule = require('../rules/lib/no-loop');
 const RuleTester = require('eslint').RuleTester;
 
 const ruleTester = new RuleTester({

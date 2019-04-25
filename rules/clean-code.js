@@ -56,6 +56,8 @@ module.exports = {
   'prefer-const': 'error',
   'prefer-includes': require('./lib/prefer-includes'),
   'prefer-named-capture-group': 'warn',
+  'prefer-queryselector': require('./lib/prefer-queryselector'),
+  'prefer-string-starts-ends': require('./lib/prefer-string-starts-ends'),
   'quotes': ['error', 'single', {allowTemplateLiterals: true}],
   'semi': ['error', 'always'],
   'semi-style': ['error', 'last'],

@@ -10,7 +10,6 @@ module.exports = {
   'no-var': 'error',
   'object-shorthand': 'error',
   'prefer-arrow-callback': 'error',
-  'prefer-numeric-literals': 'error',
   'prefer-template': 'error',
   'prefer-spread': 'error',
   'prefer-rest-params': 'error',

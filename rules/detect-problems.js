@@ -14,7 +14,6 @@ module.exports = {
   'no-implicit-globals': 'error',
   'no-implied-eval': 'error',
   'no-invalid-this': 'error',
-  'no-iterator': 'error',
   'no-labels': 'error',
   'no-lone-blocks': 'error',
   'no-multi-str': 'error',
@@ -35,7 +34,6 @@ module.exports = {
   'no-useless-constructor': 'error',
   'no-useless-rename': 'error',
   'no-with': 'error',
-  'strict': 'error',
   'yoda': ['error', 'never', { onlyEquality: true }],
 
   // potential Node.js problems
@@ -44,5 +42,4 @@ module.exports = {
   'no-buffer-constructor': 'error',
   'no-new-require': 'error',
   'no-path-concat': 'error',
-  'no-sync': 'warn',
 };
