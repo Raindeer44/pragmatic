@@ -42,6 +42,7 @@ module.exports = {
   'max-statements': ['error', 10, {'ignoreTopLevelFunctions': false}],
   'max-statements-per-line': ['error', 1],
   'no-alert': 'warn',
+  'no-iife': require('./lib/no-iife'),
   'no-lonely-if': 'error',
   'no-loops': require('./no-loop'),
   'no-magic-numbers': 'error',
