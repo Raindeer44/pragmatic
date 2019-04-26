@@ -2,7 +2,6 @@ image: node:latest
 
 stages:
     - build
-    - test
 
 cache:
     paths:
@@ -15,8 +14,3 @@ install_deps:
     artifacts:
         paths:
             - node_modules/
-
-test:
-    stage: test
-    script:
-        - npm test

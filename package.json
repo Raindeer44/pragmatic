@@ -3,9 +3,7 @@
   "description": "A pragmatic guide for styling your Javascript code",
   "version": "1.11.1",
   "author": "Jade Michael Thornton",
-  "scripts": {
-    "test": "mocha test --recursive"
-  },
+  "scripts": {},
   "engines": {
     "node": ">=7"
   },
