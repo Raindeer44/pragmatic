@@ -1,7 +1,7 @@
 {
   "name": "pragmatic-style",
   "description": "A pragmatic guide for styling your Javascript code",
-  "version": "1.10.0",
+  "version": "1.11.0",
   "author": "Jade Michael Thornton",
   "scripts": {
     "test": "mocha test --recursive"
