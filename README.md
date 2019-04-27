@@ -2,9 +2,9 @@
 
 Pragmatic is a guide for writing clean, modern and problem-free JavaScript.
 
-[![pipeline status](https://gitlab.com/thornjad/pragmatic-style/badges/master/pipeline.svg?style=flat-square)](https://gitlab.com/thornjad/pragmatic-style/commits/master)
+[![pipeline status](https://gitlab.com/thornjad/pragmatic/badges/master/pipeline.svg?style=flat-square)](https://gitlab.com/thornjad/pragmatic/commits/master)
 [![npm](https://img.shields.io/npm/v/pragmatic-style.svg?style=flat-square)](https://www.npmjs.com/package/pragmatic-style)
-[![license](https://img.shields.io/badge/license-ISC-blue.svg?style=flat-square)](https://gitlab.com/thornjad/pragmatic-style/blob/master/LICENSE)
+[![license](https://img.shields.io/badge/license-ISC-blue.svg?style=flat-square)](https://gitlab.com/thornjad/pragmatic/blob/master/LICENSE)
 
 ## Installation
 
